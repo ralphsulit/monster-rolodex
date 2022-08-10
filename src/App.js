@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 // Components
 import CardList from './Components/card-list/card-list.component.jsx';
-import SearchBox from './Components/search-box/seach-box.component.jsx';
+import SearchBox from './Components/search-box/search-box.component.jsx';
 
 class App extends Component {
   constructor() {
@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBox
-          className='search-box'
+          className='monsters-search-box'
           onChangeHandler={onSearchChange} 
           placeholder='search monsters'
         />

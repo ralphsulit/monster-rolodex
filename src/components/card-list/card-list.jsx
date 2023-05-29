@@ -1,9 +1,19 @@
-import React from 'react';
+import { Component } from 'react';
 
-const CardList = () => {
-  return (
-    <div></div>
-  )
-};
+class CardList extends Component {
+  render() {
+    const { monsters } = this.props
+
+    return (
+      <div>
+        {monsters.map((monster) => {
+          return (
+            <h1 key={monster.id}>{monster.name}</h1>
+          )
+        })}
+      </div>
+    )
+  }
+}
 
 export default CardList;

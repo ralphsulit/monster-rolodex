@@ -5,6 +5,7 @@ class CardList extends Component {
     const { monsters } = this.props
 
     return (
+      // map through the monster array 
       <div>
         {monsters.map((monster) => {
           return (
